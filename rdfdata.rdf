@@ -1,0 +1,1525 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns:rd="http://www.rdfdata.org/ns/"
+	 xmlns="http://purl.org/dc/elements/1.1/">
+
+<!-- Todo: 
+
+- replace rd:id with xml:id or xmlid once that gets straightened out. 
+
+- add a status field to identify links that were 404s at last linkcheck instead of commenting them out. Is there a predicate for HTTP response code? Make a "record" showing that and date checked.
+
+- backup of wiki page introduction:
+
+Please add suggestions and corrections to the rdfdata list here. We're looking for web services that deliver RDF and files of RDF of at least 60 or 70K. For RSS files of transient data and FOAF files, other web sites specialize in these. For RDF-related tools, see [http://www.ilrt.bris.ac.uk/discovery/rdf/resources Dave Beckett's Resource Description Framework (RDF) Resource Guide].
+
+
+-->
+
+  <!-- Metadata about this file  -->
+
+  <rdf:Description rdf:about="" rd:id="i0">
+    <creator>Bob DuCharme</creator>
+    <description>This file has metadata about larger RDF collections
+    available on the public Internet. (By "larger," I mean "bigger than
+    individual RSS feeds or FOAF files.") A resource with a dc:format
+    property of http://www.w3.org/1999/02/22-rdf-syntax-ns# is parsable
+    RDF; the others generally link to web pages that have links to RDF,
+    zipped RDF, etc. See http://www.rdfdata.org for more.</description>
+    <rights rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.0/"/>
+  </rdf:Description>
+
+  <!-- Files of the rdfdata.org database -->
+
+  <rdf:Description rdf:about="http://rdfweb.org/topic/FOAFBulletinBoard" rd:id="i1">
+    <title>FOAFWiki</title>
+    <date>2004-09-02T14:00:00Z</date>
+    <description>List of FOAF files.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#foaf"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rdfweb.org/topic/DataSources" rd:id="i2">
+    <title>FOAFWiki Data Sources</title>
+    <date>2004-09-29T14:00:00Z</date>
+    <description>"FOAF data and where to get it"</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#foaf"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://esw.w3.org/topic/AnRdfHarvesterStartingPoint" rd:id="i3">
+    <title>An RDF Harvester Starting Point</title>
+    <date>2004-09-02T14:00:00Z</date>
+    <description>Pointers to mosty FOAF data.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#foaf"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2001/sw/Europe/200303/geo/" rd:id="i4">
+    <title>SWAD-Europe 2003 collections of FOAF entries</title>
+    <date>2004-09-02T14:00:00Z</date>
+    <description>Arranged by group membership.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#foaf"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.historical-id.info/files/" rd:id="i5">
+    <title>FOAF files of historical figures</title>
+    <date>2004-09-04T14:00:00Z</date>
+    <description>FOAF (plus some custom properties) data for a motley collection of  historical figures</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#foaf"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.monkeyfist.com/RSS/1.0-jumbo/" rd:id="i6">
+    <title>Monkeyfist's archive of RSS 1.0 items</title>
+    <date>2004-09-02T14:00:00Z</date>
+    <description>Essays, argument, politics, technology, culture.</description>      <type rdf:resource="http://www.rdfdata.org/ns/dataclass#rss"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://aaronland.info/nytimes/" rd:id="i7">
+    <title>RDF of metadata supplied with web versions of NY Times articles</title>
+    <date>2004-09-02T14:00:00Z</date>
+    <description>By Aaron Straup Cope.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#docmeta"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.google.com/search?q=inurl%3Amutopia%20filetype%3Ardf" rd:id="i8">
+    <title>Mutopia project</title>
+    <date>2004-09-02T14:00:00Z</date>
+    <description>Like the Gutenberg project, but for sheet music.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#music"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.musicbrainz.org/MM/" rd:id="i9">
+    <title>musicbrainz</title>
+    <date>2004-09-02T14:00:00Z</date>
+    <description>Metadata about albums.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#music"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.semanticweb.org/library/" rd:id="i10">
+    <title>WordNet 1.6 as RDF</title>
+    <date>2004-09-02T14:00:00Z</date>
+    <description rdf:parseType="Literal">On-line lexical reference system. See also <a href="http://projects.teknowledge.com/DAML/HW3/">DAML version</a>.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#ref"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://tap.stanford.edu/tap/download.html" rd:id="i11">
+    <title>Stanford TAP knowledge base</title>
+    <date>2004-09-02T14:00:00Z</date>
+    <description>Includes RDF on places, musicians, organizations, athletes, and products (bottom of page).</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#ref"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rdf.dmoz.org/" rd:id="i12">
+    <title>DMOZ RDF dump</title>
+    <date>2004-09-02T14:00:00Z</date>
+    <description rdf:parseType="Literal">Open Directory Project. In addition to large dump file, try adding "index.rdf" to any DMOZ page to see an RDF version of the displayed data. See also w3.org <a href="http://esw.w3.org/topic/DmozRdf">DmozRdf</a> wiki page about converting DMOZ data from being "RDF-like" to something that RDF parsers can really read.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#ref"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.daml.org/2001/12/factbook/" rd:id="i13">
+    <title>2001 CIA World Fact Book</title>
+    <date>2004-09-02T14:00:00Z</date>
+    <description>In DAML.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#ref"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.ontoknowledge.org/oil/case-studies/CIA-facts.rdf" rd:id="i14">
+    <title>1999 CIA World Fact Book</title>
+    <date>2004-09-24T14:00:00Z</date>
+    <description>On-To-Knowledge case study data.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#ref"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.isb-sib.ch/%7Eejain/rdf/data/" rd:id="i15">
+    <title>UniProt protein sequence and annotation data</title>
+    <date>2004-09-02T14:00:00Z</date>
+    <description rdf:resource="http://www.rdfdata.org/desc/i3.xml"/>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#bio"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://download.freshmeat.net/backend/" rd:id="i16">
+    <title>Freshmeat metadata</title>
+    <date>2004-10-12T14:00:00Z</date>
+    <description>Directory listing shows several RDF files, although the 85 meg one doesn't look like real RDF.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#sware"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.ldodds.com/foaf/data/" rd:id="i17">
+    <title>FOAF-flavored Freshmeat metadata</title>
+    <date>2004-09-04T14:00:00Z</date>
+    <description rdf:parseType="Literal">
+      <p>I had an initial crack at converting the Freshmeat data export into FOAF. Transform and data are <a href="http://www.ldodds.com/foaf/data/">here</a>. <a href="http://rdfweb.org/pipermail/rdfweb-dev/2004-January/012482.html">Mailing list announcement</a>. Probably should convert to DOAP these days though -- LeighDodds</p>
+    </description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#sware"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://bitzi.com/openbits/datadump" rd:id="i18">
+    <title>Bitzi catalog of files on the web</title>
+    <date>2004-09-02T14:00:00Z</date>
+    <description>2001-11-19 RDF dumps</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#webmeta"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2002/01/tr-automation/tr.rdf" rd:id="i19">
+    <title>Metadata about W3C technical reports</title>
+    <date>2004-09-02T14:00:00Z</date>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#w3c"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/QA/TheMatrix.rdf" rd:id="i20">
+    <title>Metadata about W3C technical reports and other files</title>
+    <date>2004-09-02T14:00:00Z</date>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#w3c"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.xml.com/pub/a/2004/09/01/hack-congress.html" rd:id="i21">
+    <title>XML.com article (with pointers to data) about U.S. Senate Metadata</title>
+    <date>2004-09-04T14:00:00Z</date>
+    <description rdf:parseType="Literal">
+      <p>Paul Ford's files of data on the U.S. Senate: <a href="http://www.xml.com/2004/09/01/examples/senators.rdf">senators.rdf</a>, <a href="http://www.xml.com/2004/09/01/examples/Senators_GIA.rdf">Senators_GIA.rdf</a> (See also his <a href='http://www.xml.com/pub/a/2004/09/01/hack-congress.html'>XML.com</a> article on this project).</p>
+    </description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#govt"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://simile.mit.edu/repository/longwell/trunk/data/bundles/" rd:id="i22">
+    <title>Simile Project data</title>
+    <date>2004-09-04T14:00:00Z</date>
+    <description rdf:parseType="Literal">
+      <p>
+	The <a xmlns="http://www.w3.org/1999/xhtml" href="http://simile.mit.edu">Simile Project</a> has zipped files of RDF in the subdirectories of the directories listed. See also the <a href='http://simile.mit.edu/repository/longwell/trunk/README.txt'>README</a> file.
+      </p>
+    </description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#semweb"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.swed.org.uk/swed/swed_technical_resources.htm" rd:id="i23">
+    <title>Semantic Web Environmental Directory</title>
+    <date>2004-09-04T14:00:00Z</date>
+    <description rdf:parseType="Literal">
+      <p>
+	Semantic Web Environmental Directory: Download portal.zip from the <a xmlns="http://www.w3.org/1999/xhtml" href="http://www.swed.org.uk/swed/swed_technical_resources.htm">Technical Resources</a> page, unzip it, and you'll find 380K of n3 files in portal/web/data/swed and a bit more scattered in other subdirectories of portal/web.
+    </p></description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#semweb"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.cyc.com/2004/06/04/cyc" rd:id="i24">
+    <title>OpenCyc</title>
+    <date>2004-09-04T14:00:00Z</date>
+    <description>In OWL. Be warned, this is a direct link to a 24MB ontology They warn that this takes approximately 9 hours to load into Protege (though I don't know what machine they were using). -- Richard Newman</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#semweb"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+<!-- 2005-01-04T11:39 no such host
+  <rdf:Description rdf:about="http://pcowles.eventsherpa.com/profile.php" rd:id="i25">
+    <title>EventSherpa shared calendars</title>
+    <date>2004-09-04T14:00:00Z</date>
+    <description rdf:parseType="Literal">
+      <p>
+      <a href="http://pcowles.eventsherpa.com/profile.php">EventSherpa</a> offers access to various shared calendars that use the W3C's <a class="empty" href="http://www.w3.org/2002/12/cal/">RDFiCalendar</a> vocabulary. RDF versions can be downloaded. </p>
+    </description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#pim"/>
+    <format>text/html</format>
+  </rdf:Description>
+-->
+
+  <rdf:Description rdf:about="http://www.godatabase.org/dev/database/archive/latest/" rd:id="i26">
+    <title>Gene Ontology Consortium data in several formats</title>
+    <date>2004-09-04T14:00:00Z</date>
+    <description rdf:parseType="Literal">
+      The <a xmlns="http://www.w3.org/1999/xhtml" href="http://www.geneontology.org/">Gene Ontology Consortium</a> has <a xmlns="http://www.w3.org/1999/xhtml" href="http://www.godatabase.org/dev/database/archive/latest/">data in several formats</a>. As per the <a xmlns="http://www.w3.org/1999/xhtml" href="http://www.godatabase.org/dev/database/archive/latest/README">README</a> file, you want the files whose names with "xml" in their names. 
+    </description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#bio"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://w3development.de/rdf/uaprof_repository/" rd:id="i27">
+    <title>UAProf profiles</title>
+    <date>2004-09-04T14:00:00Z</date>
+    <description rdf:parseType="Literal">
+      <p>
+      Profiles (<a xmlns="http://www.w3.org/1999/xhtml" href="http://www.sourceo2.com/O2_Developers/O2_technologies/O2Guide_to_WAP/UAProf/default.htm">background on Agent Profiles</a>) for a long list of devices.</p>
+    </description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#hware"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.i-u.de/schools/eberhart/rdf/" rd:id="i28">
+    <title>2002-08 Survey of RDF data on the web</title>
+    <date>2004-09-02T14:00:00Z</date>
+    <description>By Andreas Eberhart of the University of Karlsruhe.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#misc"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.sia.eui.upm.es/%7Ejbarrasa/sources/" rd:id="i29">
+    <title>Jes&#xfa;s Barrasa Rodr&#xed;guez collection of several RDF data sets</title>
+    <date>2004-09-02T14:00:00Z</date>
+    <description>Natural Protected Areas in Spain, Members of the IA dept. at the Facultad de Inform&#xe1;tica of the UPM, and Teaching staff from the Escuela Universitaria de Inform&#xe1;tica of the UPM.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#misc"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://stompstompstomp.com/svn/moozilla/1.00-branch/locale/en-US/moozilla/help/search-db.rdf" rd:id="i30">
+    <title>MOOzilla configuration data</title>
+    <date>2004-09-24T14:00:00Z</date>
+    <description>"MOOzilla is a cross-platform MOO client capable of rendering inline HTML directly from a MOO."</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#sware"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://tsldev.trustix.org/horizon/contrib/rdfs/" rd:id="i31">
+    <title>Trustix build metadata</title>
+    <date>2004-09-24T14:00:00Z</date>
+    <description>Directory listing that includes RDF files listing resources at Trustix, "a Linux distribution for servers with focus on security and stability." </description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#sware"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://london.pm.org/~jo/foaf/" rd:id="i32">
+    <title>London Perl Mongers Chat Logs</title>
+    <date>2004-09-27T14:00:00Z</date>
+    <description>File listing links to rdf, txt, and html versions</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#chatlog"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://derpi.tuwien.ac.at/~andrei/rdfdata/" rd:id="i33">
+    <title>Research project descriptions</title>
+    <date>2004-09-27T14:00:00Z</date>
+    <description>Two files of Research Project Descriptions from Andrei Lopatenko of the University of Manchester</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#misc"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://w.moreover.com/categories/ocs/ocsdirectory_0_1.rdf" rd:id="i34">
+    <title>Moreover channel directory listing</title>
+    <date>2004-09-27T14:00:00Z</date>
+    <description>Metadata about Moreover Technology's RSS news feeds.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#rss"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://chatlogs.musicbrainz.org/" rd:id="i35">
+    <title>Musicbrains chatlogs</title>
+    <date>2004-09-27T14:00:00Z</date>
+    <description>One per day since 15 February 2003.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#chatlog"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://triplestore.aktors.org/manage/" rd:id="i36">
+    <title>UK HE computer science community metadata</title>
+    <date>2004-09-28T14:00:00Z</date>
+    <description rdf:parseType="Literal">
+      Gathered as part of the <a href="http://www.hyphen.info">Hyphen</a> effort. More information at the <a href="http://triplestore.aktors.org/">AKT Triplestore homepage</a>.
+    </description>
+
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#misc"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.cspinet.org/new/news.rdf" rd:id="i37">
+    <title>Archived RSS entries on nutrition, food safety, and more.</title>
+    <date>2004-09-28T14:00:00Z</date>
+    <description>From the Center for Science in the Public Interest.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#rss"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.ling.helsinki.fi/kit/2004k/ctl310semw/OWL/" rd:id="i38">
+    <title>Food and wine information</title>
+    <date>2004-08-28T14:00:00Z</date>
+    <description>Finnish web site.</description>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.maximumedge.com/encyclopedia/rdf/structure.rdf" rd:id="i39">
+    <title>maximumedge.com on-line encyclopedia taxonomy</title>
+    <date>2004-09-29T14:00:00Z</date>
+    <description>RDF file embedded inside of an HTML file.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#ref"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+<!-- status 2005-02-21T09:59: 404 not found
+  <rdf:Description rdf:about="http://www.cs.vu.nl/~karamkhe/wbkr/wbkr06_ontology.rdf" rd:id="i40">
+    <title>Dutch TV guide ontology and data</title>
+    <date>2004-09-29T14:00:00Z</date>
+    <description rdf:parseType="Literal">Created as part of a student research project. See <a href="http://www.cs.vu.nl/~karamkhe/wbkr/">project page</a> for pointers to more information and additional RDF files.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#sched"/>
+    <format>text/html</format>
+  </rdf:Description>
+-->
+
+  <rdf:Description rdf:about="http://www.google.com/search?q=inurl:gd.tuwien.ac.at/opsys/linux/RDF+filetype:rdf&amp;filter=0" rd:id="i41">
+    <title>Goodie Domain Service metadata</title>
+    <date>2004-09-29T14:00:00Z</date>
+    <description>From Vienna's University of Technology: thousands of files of metadata about files used in open source projects.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#sware"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.google.com/search?q=site:linkinnovations.com+filetype:rdf&amp;filter=0" rd:id="i42">
+    <title>tinysofa file information</title>
+    <date>2004-09-29T14:00:00Z</date>
+    <description>Metadata about files for building Linux-based operating system.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#sware"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.google.com/search?q=site:w3photo.org%20filetype:rdf" rd:id="i43">
+    <title>IW3C2 conference picture metadata</title>
+    <date>2004-09-29T14:00:00Z</date>
+    <description>Link is a Google query for the individual files for each picture.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#w3c"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rdfweb.org/people/danbri/irclogs/foaf/irc.openprojects.net:6667/foaf/" rd:id="i44">
+    <title>Chat log discussions of FOAF technology</title>
+    <date>2004-09-30T14:00:00Z</date>
+    <description>From the rdfweb.org folk</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#chatlog"/>
+
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://rdfweb.org/2003/02/28/cwm-crawler-output.rdf" rd:id="i45">
+    <title>FOAF crawler results</title>
+    <date>2004-09-30T14:00:00Z</date>
+    <description>Dan Bricklin rdfweb.org project</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#foaf"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <!-- status: 2004-11-02: now password protected
+       <rdf:Description rdf:about="http://dilib.inist.fr/dilib/v04Public/DilibRoot/Import/functions.rdf" rd:id="i46">
+       <title>Metadata about files used in the French DILIB project. Bag elements list functions declared or defined in various C source files.</title>
+       <date>2004-10-01T14:00:00Z</date>
+       <description>Publishing platform</description>
+       <type rdf:resource="http://www.rdfdata.org/ns/dataclass#sware"/>
+       <format>application/rdf+xml</format>
+       </rdf:Description>
+  -->
+
+<!-- status 2005-02-21T09:56: timed out 
+  <rdf:Description rdf:about="http://gemini.doosh.net/foaf/" rd:id="i47">
+    <title>doosh.net scutter plan and data</title>
+    <date>2004-10-01T14:00:00Z</date>
+    <description>Few clues about author</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#foaf"/>
+    <format>text/html</format>
+  </rdf:Description>
+-->
+  <rdf:Description rdf:about="http://lists.w3.org/Archives/Public/www-archive/2003Mar/att-0006/_out.rdf" rd:id="i48">
+    <title>cwm.py-generated _out.rdf file</title>
+    <date>2004-10-01T14:00:00Z</date>
+    <description>DAML equivalences, FOAF information, document metadata, all kinds of stuff.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#foaf"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <!-- status: 2004-11-02: connection refused
+       <rdf:Description rdf:about="http://ontoweb.aifb.uni-karlsruhe.de/CMI/educational-resource.rdf" rd:id="i49">
+       <title>Metadata about OntoWeb resources</title>
+       <date>2004-10-01T14:00:00Z</date>
+       <description>"Ontology-based information exchange for knowledge management and electronic commerce"</description>
+       <type rdf:resource="http://www.rdfdata.org/ns/dataclass#docmeta"/>
+       <format>application/rdf+xml</format>
+       </rdf:Description>
+  -->
+
+  <rdf:Description rdf:about="http://www.siderean.com/dc2002.rdf" rd:id="i50">
+    <title>Conference description metadata</title>
+    <date>2004-10-04T14:00:00Z</date>
+    <description>"RDF model providing Seamark-based faceted search and navigation over
+    Proc. Int. Conf. on Dublin Core and Metadata for e-Communities 2002."</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#misc"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://xmlns.filsa.org/metamail/demo/mbox.rdf" rd:id="i51">
+    <title>Mailing list message metadata</title>
+    <date>2004-10-04T14:00:00Z</date>
+    <description>Created by Phil Suh as part of his Metamail RDF Vocabulary project</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#pim"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.google.com/search?q=inurl:cidoc.ics.forth.gr+filetype:rdf&amp;num=50&amp;filter=0" rd:id="i52">
+    <title>Schemas for the CIDOC Conceptual Reference Model</title>
+    <date>2004-10-05T14:00:00Z</date>
+    <description>CIDOC CRM "provides definitions and a formal structure for describing the implicit and explicit concepts and relationships used in cultural heritage documentation."</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#semweb"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dmag.upf.es/livingsw/resources/iprontomodel.rdf" rd:id="i53">
+    <title>Intellectual Property Rights Ontology (IPRonto)</title>
+    <date>2004-10-05T14:00:00Z</date>
+    <description>From the The Distributed Multimedia Applications Group at the Universitat Pompeu Fabra in Barcelona</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#semweb"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.mindswap.org/~kendall/ev/allpolls.rdf" rd:id="i54">
+    <title>U.S. Presidential polling data</title>
+    <date>2004-10-05T14:00:00Z</date>
+    <description>From http://www.electoral-vote.com. Updated every hour.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#govt"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+
+<!-- status 2005-02-21T09:58: no such host
+  <rdf:Description rdf:about="http://sw1.ilrt.org/rdfquery/tests/tests/rdfstore-tests-2003-05-14/inputs/dc.rdf" rd:id="i55">
+    <title>Metadata about testing of mkdoc web publishing application</title>
+    <date>2004-10-06T14:00:00Z</date>
+    <description>See www.mkdoc.com.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#sware"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+-->
+
+  <rdf:Description rdf:about="http://www.dataconsortium.org/REISDocuments.rdf" rd:id="i56">
+    <title>Ontology for property-level data</title>
+    <date>2004-10-07T14:00:00Z</date>
+    <description>From the vaguely-named Data Consortium, "an organization for the creation, maintenance, and promulgation of universal communication protocols for the commercial equity real estate industry."</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#semweb"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.ontoknowledge.org/oil/case-studies/KA-facts.rdf" rd:id="i57">
+    <title>(KA)2 Ontology</title>
+    <date>2004-10-11T14:00:00Z</date>
+    <description>Metadata about research papers in the Knowledge Acquisition community.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#docmeta"/>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#semweb"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.daml.org/cgi-bin/nyse?IBM" rd:id="i58">
+    <title>NYSE ticker symbol information</title>
+    <date>2004-10-13T14:00:00Z</date>
+    <description rdf:parseType="Literal">Company name, industry type, and more information associated with a stock ticker symbol. See the <a href='http://www.daml.org/2001/10/html/'>DAML HTML Gateway Tools</a> page for more information.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#websvc"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.daml.org/cgi-bin/zipcode?10001" rd:id="i59">
+    <title>U.S. Zip Code information</title>
+    <date>2004-10-13T14:00:00Z</date>
+    <description rdf:parseType="Literal">City, state, and more information associated with the zip code passed as a parameter. See the <a href='http://www.daml.org/2001/10/html'>DAML HTML Gateway Tools</a> page for more information.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#websvc"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.daml.org/cgi-bin/airport?LGA" rd:id="i60">
+    <title>Airport information</title>
+    <date>2004-10-13T14:00:00Z</date>
+    <description rdf:parseType="Literal">Full name, location, and other information about airport associated with the 3-letter IATA code passed as a parameter. See the <a href='http://www.daml.org/2001/10/html'>DAML HTML Gateway Tools</a> page for more information.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#websvc"/>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#geo"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.musicbrainz.org/client_howto.html" rd:id="i61">
+    <title>MusicBrains web service</title>
+    <date>2004-10-13T14:00:00Z</date>
+    <description rdf:parseType="Literal">Information about building a client to retrieve RDF from their database via their REST API. For example links directly to RDF of artist, album, and track information, see the <a href='http://musicbrainz.org/track/27228403-9059-4763-9bef-831c955c3ea4.html'>Cheese and Onions</a> page.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#websvc"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+
+  <rdf:Description rdf:about="http://www.semanticwebsearch.com/reference.rsp" rd:id="i62">
+    <title>Intellidimension Semantic Web Search</title>
+    <date>2004-10-14T14:00:00Z</date>
+    <description rdf:parseType="Literal">Documentation for Intellidimension RDF web service. See also their <a href='http://www.semanticwebsearch.com/newquery.rsp'>query builder/tester</a>, which includes a "samples" drop-down list box that shows the URLs for some sample queries and executes them. </description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#websvc"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.wasab.dk/morten/2003/12/nearestAirport/" rd:id="i63">
+    <title>Find Nearest Airport</title>
+    <date>2004-10-15T14:00:00Z</date>
+    <description rdf:parseType="Literal">By latitude and longitude or by IATA airport code. Returns RDF/XML, n3, or HTML.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#websvc"/>
+    <format>text/html</format>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.wasab.dk/morten/2004/04/twilight/" rd:id="i64">
+    <title>Twilight</title>
+    <date>2004-10-15T14:00:00Z</date>
+    <description rdf:parseType="Literal">Find out when sunrise, sunset, and related events will take place on a given date at a given longitude and latitude. RDF/XML, n3, or HTML.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#websvc"/>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#geo"/>
+    <format>text/html</format>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dublincore.org/dcregistry/" rd:id="i65">
+    <title>Dublin Core Metadata Registry</title>
+    <date>2004-10-18T14:00:00Z</date>
+    <description rdf:parseType="Literal">Web service lets you query the Dublin Core's metadata registry. The site provides both a <a href='http://dublincore.org/dcregistry/pageDisplayServlet?page=help_en-US.xsl#H11'>REST interface</a> and a 
+    <a href='http://dublincore.org/dcregistry/pageDisplayServlet?page=help_en-US.xsl#H12'>SOAP Interface</a>.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#websvc"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+
+  <rdf:Description rdf:about="http://sw.nokia.com/uriqa/" rd:id="i66">
+    <title>Nokia's URIQA RDF Gateway</title>
+    <date>2004-10-19T14:00:00Z</date>
+    <description rdf:parseType="Literal">Returns RDF about a wide variety of Nokia resources. See <a href='http://lists.w3.org/Archives/Public/www-rdf-interest/2004Oct/0196.html'>Patrick Stickler's 2004-10-18 rdf-interest posting</a> for background and sample URLs.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#websvc"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <!-- status: 11-02-04: govtrack.us not responding, but maybe the server's
+       just down. -->
+  <rdf:Description rdf:about="http://www.govtrack.us/data/rdf/" rd:id="i67">
+    <title>U.S. Congressional metadata</title>
+    <date>2004-10-20T14:00:00Z</date>
+    <description rdf:parseType="Literal">Gzipped files of metadata about U.S. senators, representatives, bills, and votes of the current session of Congress. Comments to comments@govtrack.us are welcome.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#govt"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.snee.com/rdf/sneeair.rdf" rd:id="i68">
+    <title>Airline flight schedule</title>
+    <date>2004-10-21T14:00:00Z</date>
+    <description rdf:parseType="Literal">A complete airline flight schedule for the fictional Snee Air Express, based on the schedule of a real airline. There are over 10,000 flights listed in the 5.5 meg RDF/XML file. Most of the ontology comes from http://www.daml.org/2001/06/itinerary/itinerary-ont, but I had to make up a namespace for a few pieces of information. I'd be happy to hear any suggestions about the structure, names, etc. used in the data. - <a href='http://www.snee.com/bob/'>Bob</a></description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#sched"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+
+  <rdf:Description rdf:about="http://jibbering.com/travel/routes.1?AMS" rd:id="i69">
+    <title>Web service of Star Alliance flight information</title>
+    <date>2004-10-22T14:00:00Z</date>
+    <description rdf:parseType="Literal">Produced by Jim Ley, along with an <a href='http://jibbering.com/travel/routes.svg?airport=ams'>SVG app</a> that lets you navigate the returned information.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#websvc"/>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#sched"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://gd.tuwien.ac.at/opsys/linux/RDF/freshrpms/misc/kernel-source/" rd:id="i70">
+    <title>Metadata about Red Hat kernel source</title>
+    <date>2004-10-25T14:00:00Z</date>
+    <description rdf:parseType="Literal">Nine files, most about half a meg.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#sware"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+
+  <rdf:Description rdf:about="http://affiliatefeeds.net/rss/recent_entry.rdf" rd:id="i71">
+    <title>Affiliate Feeds "Recent Entry" list</title>
+    <date>2004-10-26T14:00:00Z</date>
+    <description rdf:parseType="Literal">Looks like transient RSS 1.0 items and not a growing collection of triples that we can count on remaining there, but it's still pretty big, and a lot of it's in Japanese, which should make it valuable for testing RDF apps. See also their <a href='http://affiliatefeeds.net/rss/recent_site_entry.rdf'>Recent Site Entry</a> file.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#rss"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+
+  <rdf:Description rdf:about="http://london.pm.org/~jo/tube.rdf" rd:id="i72">
+    <title>London tube schedules</title>
+    <date>2004-10-27T14:00:00Z</date>
+    <description rdf:parseType="Literal">Information from the <a href="http://www.tubeplanner.com/">Tube Planner</a> to use in planning trips on the London Underground. See also <a href='http://london.pm.org/~jo/tube_nested.rdf'>tube_nested.rdf</a>.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#sched"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://openguides.org" rd:id="i73">
+    <title>OpenGuides City Guides</title>
+    <date>2004-10-28T14:00:00Z</date>
+    <description rdf:parseType="Literal">Look for the "RDF/XML for this node" link on most pages in the OpenGuides Wiki of guides to cities in the UK, Europe, and the US. Great for addresses and geospatical data on museums, restaurants, etc.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#ref"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+
+  <rdf:Description rdf:about="http://www.arches.uga.edu/~vstaub/GlobalInfoSys/project/ontology/Could_have_been.rdf" rd:id="i74">
+    <title>University of Georgia Semantic web-related bibliography</title>
+    <date>2004-10-29T14:00:00Z</date>
+    <description rdf:parseType="Literal">Computer science bibliographic information on work related to semantic web. Part of the University of Georgia's <a href='http://www.arches.uga.edu/~vstaub/GlobalInfoSys/project/main.htm'>LSDIS Project</a>.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#biblio"/>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#semweb"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2002/12/cal/test/" rd:id="i75">
+    <title>RDF Calendaring and Scheduling example data</title>
+    <date>2004-11-01T13:55:00Z</date>
+    <description rdf:parseType="Literal">Lots of good files. See also the <a href="http://esw.w3.org/topic/RdfCalendarDocumentation">documentation</a> and <a href="http://esw.w3.org/topic/RdfCalendarPresentation">overview</a>.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#sched"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://ontobroker.semanticweb.org/rdfcrawl/help/crawlmodel.rdf" rd:id="i76">
+    <title>"RDF Crawler" data</title>
+    <date>2004-11-02T14:49:00Z</date>
+    <description rdf:parseType="Literal">Lots of DAML properties about various people and other resources. Part of the 2000-11-27 RDF Crawler project from <a href='http://ontobroker.semanticweb.org/'>http://ontobroker.semanticweb.org</a>.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#semweb"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.inventati.org/noviglob/noviglob.rdf" rd:id="i77">
+    <title>Inventati RSS archives</title>
+    <date>2004-11-03T14:15:00Z</date>
+    <description rdf:parseType="Literal">Several months of RSS 1.0 entries in English and Italian from Italian Internet activists.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#rss"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+<!-- status 2005-02-21T09:57: 404
+  <rdf:Description rdf:about="http://svn.mindswap.org/pychinko/2004-07-29.rdf" rd:id="i78">
+    <title>Chat log on Pychinko project</title>
+    <date>2004-11-04T15:00:00Z</date>
+    <description rdf:parseType="Literal">Pychinko is a "Rete-based RDF friendly rule engine". <a href='http://www.mindswap.org/~katz/pychinko/'>(more)</a></description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#chatlog"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+-->
+
+  <rdf:Description rdf:about="http://rdfweb.org/foafcorp/data/_corpdata.rdf" rd:id="i79">
+    <title>FOAFCorp data</title>
+    <date>2004-11-05T15:10:00Z</date>
+    <description rdf:parseType="Literal">Corporate friends of friends: top personnel at large corporations. <a href='http://rdfweb.org/foafcorp/intro.html'>(more)</a></description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#foaf"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.isb-sib.ch/DEA/2003_2004/tpmodule3/xml/08/keywords.rdf" rd:id="i80">
+    <title>biology keywords</title>
+    <date>2004-11-08T16:00:00Z</date>
+    <description rdf:parseType="Literal">Over 870 keywords such as  "3Fe-4S" and "Sialic acid". Hosted by the Swiss Institute of Bioinformatics.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#bio"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.agfa.com/w3c/temp/rdf-result.rdf" rd:id="i81">
+    <title>Euler Proof Mechanism project data</title>
+    <date>2004-11-09T14:450:00Z</date>
+    <description rdf:parseType="Literal">2002 AGFA inference engine research project includes sample RDF/XML and n3 data. <a href='http://www.agfa.com/w3c/euler/'>(more)</a></description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#semweb"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.matapihi.org.nz/" rd:id="i82">
+    <title>Metapihi Collection of New Zealand Images</title>
+    <date>2004-11-10T15:05:00Z</date>
+    <description rdf:parseType="Literal">50,000 pictures relating to Aotearoa New Zealand culture. For any image's page, click "See Description" and then "View Dublin Core Record" to see metadata for that image. <a href='http://www.matapihi.org.nz/logicrouter/servlet/LogicRouter?PAGE=object&amp;OUTPUTXSL=viewrec.xsl&amp;pm_RC=REPO06DB&amp;pm_OI=52057&amp;api_1=GET_OBJECT_XML'>(example)</a> <a href='http://ndf.natlib.govt.nz/about/matapihi.htm#architecture'>(background)</a></description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#img"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.affymetrix.com/community/publications/affymetrix/tmsplice/index.affx">
+    <title>Mouse Gene Sequences</title>
+    <date>2004-11-11T15:00:00Z</date>
+    <description rdf:parseType="Literal">Data for project "Effects of Alternative Splicing on Transmembrane Proteins in the Mouse Genome". Page links to 19 files in a choice of RDF or N3 formats.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#bio"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+<!-- 2005-01-04T11:40 error code: 12030 (connection aborted)
+
+  <rdf:Description rdf:about="http://www.arcetri.astro.it/~baglioni/mst.rdf"  rd:id="i83">
+    <title>Astrophysics bibliography</title>
+    <date>2004-11-15T15:00:00Z</date>
+    <description rdf:parseType="Literal">Research bibliography hosted at Italy's Osservatorio Astrofisico di Arcetri.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#biblio"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+-->
+
+  <rdf:Description rdf:about="http://www.kbs.uni-hannover.de/~brase/seminar/ss2003/ULI_KI.rdf"  rd:id="i84">
+    <title>University of Hannover Semantic Web Bibliography</title>
+    <date>2004-11-17T20:49:00Z</date>
+    <description rdf:parseType="Literal">From the Institut f&#xfc;r Informationssysteme, Wissenbasierte Systeme (Information Systems Institute, Knowledge Based Systems).</description>
+
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#semweb"/>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#biblio"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+
+  <rdf:Description rdf:about="http://minnesota.ncl.ac.uk/Work.rdf.xml" rd:id="i85">
+    <title>Paul Hollands' personal calendar</title>
+    <date>2004-11-19T15:00:00Z</date>
+    <description rdf:parseType="Literal">RDF of Paul Hollands' ICalendar data created with Dan Connolly's Python conversion tool.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#sched"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+
+  <rdf:Description rdf:about="http://www.objectsdirectory.com/~objectsd/cgi-bin/web/rdf/structure.rdf"  rd:id="i86">
+    <title>ObjectsDirectory data collection</title>
+    <date>2004-11-22T18:00:00Z</date>
+    <description rdf:parseType="Literal">Ontology plus entries about websites, mostly of companies <a href='http://www.objectsdirectory.com/~objectsd/cgi-bin/web/rdf/index.html'>(more)</a></description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#webmeta"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.siderean.com/dc2003/dc2003_agents.rdf"  rd:id="i91">
+    <title>2003 Dublin Core Conference - FOAF Agents</title>
+    <date>2004-11-23T16:08:00Z</date>
+    <description rdf:parseType="Literal">"This file describes the authors of papers and posters in the conference proceedings and their affiliated organizations."</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#semweb"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+
+  <rdf:Description rdf:about="http://www.siderean.com/dc2003/dc2003_presentations.rdf"  rd:id="i88">
+    <title>2003 Dublin Core Conference metadata - Tracks, Papers, and Posters</title>
+    <date>2004-11-23T16:08:00Z</date>
+    <description rdf:parseType="Literal">"This file describes the tracks, papers and posters in the conference proceedings."</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#semweb"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+
+  <rdf:Description rdf:about="http://swordfish.rdfweb.org/rdfquery/tests/tests/rdfstore-tests-2003-05-14/inputs/dc.rdf"  rd:id="i87">
+    <title>MKDoc Testers</title>
+    <date>2004-11-24T15:00:00Z</date>
+    <description rdf:parseType="Literal">Metadata about testing (and testers) of mkdoc web publishing application. <a href='http://testers.mkdoc.com/'>(more)</a></description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#sware"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+
+  <rdf:Description rdf:about="http://www.siderean.com/iswc2004/rdf/papers.rdf"  rd:id="i89">
+    <title>Bibliography of ISWC 2004 Papers</title>
+    <date>2004-11-26T21:44:00Z</date>
+    <description rdf:parseType="Literal">From the 3rd International Semantic Web Conference in Hiroshima.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#semweb"/>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#biblio"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.siderean.com/iswc2004/rdf/posters.rdf"  rd:id="i90">
+    <title>Bibliography of ISWC 2004 Poster Sessions</title>
+    <date>2004-11-29T16:00:00Z</date>
+    <description rdf:parseType="Literal">From the 3rd International Semantic Web Conference in  Hiroshima.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#biblio"/>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#semweb"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+
+  <rdf:Description rdf:about="http://validator.w3.org"  rd:id="i92">
+    <title>W3C Markup Validation Service</title>
+    <date>2004-11-30T14:30:00Z</date>
+    <description rdf:parseType="Literal">URL-driven validator can return report in EARL RDF. <a href='http://validator.w3.org/docs/users.html#Output'>(output option documentation)</a> <a href='http://validator.w3.org/check?uri=http%3A%2F%2Fwww.rdfdata.org%2F&amp;output=earl'>(sample request)</a> <a href="http://www.w3.org/TR/EARL10/">(more on EARL)</a></description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#websvc"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+
+  <rdf:Description rdf:about="http://rss.windy.ac/onailab-blogs.rdf"  rd:id="i93">
+    <title>windy.ac RSS archive</title>
+    <date>2004-12-01T15:15:00Z</date>
+    <description rdf:parseType="Literal">Japanese RSS archive in Shift-JIS encoding</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#rss"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.csd.abdn.ac.uk/~apreece/research/TowardsAnIntelligentWeb/PUB_findallbyKen_result.rdf"  rd:id="i94">
+    <title>University of Aberdeen Computer Science bibliography</title>
+    <date>2004-12-02T14:18:00Z</date>
+    <description rdf:parseType="Literal">University of Aberdeen bibliography (general CS topics) as part of the Advanced Knowledge Technologies project. <a href="http://www.csd.abdn.ac.uk/research/akt/">(more)</a></description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#biblio"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://wonderweb.semanticweb.org/owl/ww-validation-results.rdf "  rd:id="i95">
+    <title>OWL-related test results</title>
+    <date>2004-12-03T17:30:00Z</date>
+    <description rdf:parseType="Literal">Part of the WonderWeb project. <a href='http://wonderweb.semanticweb.org/owl/'>(more on WonderWeb)</a></description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#semweb"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://weblog.holopedia.org/all.rdf"  rd:id="i96">
+    <title>Holopedia RSS archive</title>
+    <date>2004-12-06T14:40:00Z</date>
+    <description rdf:parseType="Literal">Taiwanese archive of postings since May 2003 is a mix of English and Chinese text.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#rss"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.sfu.ca/~gswamina/index.rdf"  rd:id="i97">
+    <title>archive: Ganesh Swami's weblog</title>
+    <date>2004-12-07T15:00:00Z</date>
+    <description rdf:parseType="Literal"></description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#rss"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://npg.nature.com/npg/servlet/Content?data=xml/02_newsfeed.xml&amp;style=xml/02_newsfeed.xsl"  rd:id="i98">
+    <title>Nature Publishing Group RSS</title>
+    <date>2004-12-08T15:00:00Z</date>
+    <description rdf:parseType="Literal">In addition to the RSS feeds announced at http://lists.w3.org/Archives/Public/www-rdf-interest/2004Oct/0286.html that describe current offerings from multiple scientific publications at NPG, RSS items from previous issues are stored in URLs of the form http://www.nature.com/nsmb/journal/v11/n9/rss.rdf. NPG's use of names from the PRISM namespace is an excellent example of RSS 1.0 using its RDF basis to extend the classes of metadata that can be stored in an RSS feed. <a href='http://nurture.nature.com/rss/modules/mod_prism.html'>(More on Nature's use of PRISM)</a></description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#rss"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://misc.2log.net/labo/blog.rdf" rd:id="i99">
+    <title>2log-labo RSS archive</title>
+    <date>2004-12-09T16:40:00Z</date>
+    <description rdf:parseType="Literal">In Japanese.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#rss"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.google.com/search?q=site:dublincore.org+filetype:rdf"  rd:id="i100">
+    <title>Document metadata at dublincore.org</title>
+    <date>2004-12-14T14:45:00Z</date>
+    <description rdf:parseType="Literal">Hundreds of directories at dublincore.org have an index.shtml.rdf file with metadata describing the default web page in that directory. The site includes many other RDF files as well, in English and in Spanish.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#docmeta"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://homepages.cwi.nl/~media/publications/ins.rdf"  rd:id="i101">
+    <title>Bibliography of INS2 publications</title>
+    <date>2004-12-15T14:15:00Z</date>
+    <description rdf:parseType="Literal">From the Centrum voor Wiskunde en Informatica's Multimedia and Human-Computer Interaction group. <a href='http://homepages.cwi.nl/~media/publications/'>(HTML version)</a></description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#biblio"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+
+  <rdf:Description rdf:about="http://www.google.com/search?q=site:w3photo.org%20filetype:rdf"  rd:id="i102">
+    <title>w3photo.org metadata</title>
+    <date>2004-12-16T15:00:00Z</date>
+    <description rdf:parseType="Literal">The web site hosts "A Semantic-Photo History of the IW3C2 Conferences"; the hundreds of images have accompanying RDF files. Replacing the file extension in any photo's URL with "rdf" seems to bring up its metadata. (Wouldn't it be great if flickr.com did this?)</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#img"/>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#w3c"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.daml.org/publications/sample-publications.daml"  rd:id="i103">
+    <title>daml.org publications list</title>
+    <date>2004-12-17T16:15:00Z</date>
+    <description rdf:parseType="Literal">"A list of refereed publications resulting from the DARPA DAML program." <a href="http://www.daml.org/publications/">Other versions of list.</a></description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#biblio"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.doaml.net/doaml/w3ml/Lists.rdf"  rd:id="i104">
+    <title>DOAML sample data on W3C mailing lists</title>
+    <date>2004-12-20T14:45:00Z</date>
+    <description rdf:parseType="Literal">Data describing W3C mailing lists to demonstrate the Description Of A Mailing List ontology.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#w3c"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.cs.umd.edu/~hendler/2003/MindPeople4-30.rdf"  rd:id="i105">
+    <title>MindPeople4-30</title>
+    <date>2004-12-21T15:00:00Z</date>
+    <description rdf:parseType="Literal">A mix of ontology, FOAF data, bibliographic data, and more from the University of Maryland's Professor James Hendler&#8212;and what a great filename.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#misc"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.zope.org"  rd:id="i106">
+    <title>zope.org: RDF metadata about every page</title>
+    <date>2004-12-22T15:25:00Z</date>
+    <description rdf:parseType="Literal">Add /rdf_view.rdf to any zope.org web page to see RDF metadata about that page.</description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#webmeta"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.daml.org/2001/01/gedcom/royal92.daml"  rd:id="i107">
+    <title>DAML file of European royalty</title>
+    <date>2004-12-27T15:45:00Z</date>
+    <description rdf:parseType="Literal">Information on  3010 individuals and 1422 families demonstrates ged2daml program for converting GEDCOM genealogical data to DAML files. <a href='http://www.daml.org/2001/01/gedcom/'>(more)</a></description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#misc"/>
+    <format>application/rdf+xml</format>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.ingentaconnect.com/content"  rd:id="i108">
+    <title>IngentaConnect RSS TOCs</title>
+    <date>2004-12-28T16:00:00Z</date>
+    <description rdf:parseType="Literal">Using IngentaConnect, you pay for access to most articles from their selection of hundreds of academic journals, but bibliographic information is free. Navigate to the table of contents for a particular issue (for example, http://www.ingentaconnect.com/content/mitpress/mlang/2000/00000002/00000002 for an issue of the now-defunct "Journal of Markup Languages"), replace the "www" in the URL with "api" and add "?format=rss" at the end and you'll get an RSS 1.0 version of the bibliographic information that uses the PRISM namespace and several others: http://api.ingentaconnect.com/content/mitpress/mlang/2000/00000002/00000002?format=rss. <a href='http://www.ldodds.com/blog/archives/000169.html'>(Leigh Dodds announcement)</a></description>
+    <type rdf:resource="http://www.rdfdata.org/ns/dataclass#biblio"/>
+    <format>text/html</format>
+  </rdf:Description>
+
+
+		<rdf:Description rdf:about="http://www.daml.org/2001/02/geofile/"  rd:id="i109">
+		  <title>DAML Geofile</title>
+		  <date>2005-01-03T15:30:00Z</date>
+           <description rdf:parseType="Literal">"The Geofile is a reference database that describes world locations. There are about 56700 locations in the file. Locations include cities, airports (various types), bodies of water, etc." Includes an ontology, an XSD schema of the datatypes, and a 40-meg data file.</description>
+		  <type rdf:resource="http://www.rdfdata.org/ns/dataclass#geo"/>
+		  <format>text/html</format>
+		</rdf:Description>
+
+
+		<rdf:Description rdf:about="http://www.daml.ri.cmu.edu/ont/USRegionState.daml"  rd:id="i110">
+		  <title>U.S. States and Regions</title>
+		  <date>2005-01-04T14:45:00Z</date>
+           <description rdf:parseType="Literal">States, their capitals, postal abbreviations, border states, and regions.</description>
+		  <type rdf:resource="http://www.rdfdata.org/ns/dataclass#geo"/>
+		  <format>application/rdf+xml</format>
+		</rdf:Description>
+
+		<rdf:Description rdf:about="http://www.daml.ri.cmu.edu/ont/USCity.daml"  rd:id="i111">
+		  <title>U.S. Cities</title>
+		  <date>2005-01-05T15:15:00Z</date>
+           <description rdf:parseType="Literal">800 U.S. cities with IDs and the states where they're located.</description>
+		  <type rdf:resource="http://www.rdfdata.org/ns/dataclass#geo"/>
+		  <format>application/rdf+xml</format>
+		</rdf:Description>
+
+		<rdf:Description rdf:about="http://www.daml.org/researchers.html"  rd:id="i112">
+		  <title>DAML researchers</title>
+		  <date>2005-01-06T14:45:00Z</date>
+           <description rdf:parseType="Literal">Information about project participants is available in DAML, OWL, and non-RDF XML formats. </description>
+		  <type rdf:resource="http://www.rdfdata.org/ns/dataclass#semweb"/>
+		  <format>text/html</format>
+		</rdf:Description>
+
+		<rdf:Description rdf:about="http://www.daml.org/2001/09/countries/"  rd:id="i113">
+		  <title>ISO 312-66-1 and FIPS 10-4 country codes</title>
+		  <date>2005-01-07T14:45:00Z</date>
+           <description rdf:parseType="Literal">Regenerated nightly. Includes a link to data sources that add properties to these country IDs.</description>
+		  <type rdf:resource="http://www.rdfdata.org/ns/dataclass#geo"/>
+		  <format>text/html</format>
+		</rdf:Description>
+
+
+
+		<rdf:Description rdf:about="http://www.daml.org/2002/10/sndl/usnavy.daml"  rd:id="i114">
+		  <title>List of U.S. Navy units</title>
+		  <date>2005-01-10T15:50:00Z</date>
+           <description rdf:parseType="Literal">June 2002 file created by the DAML project from the "Standard Naval Distribution List."</description>
+		  <type rdf:resource="http://www.rdfdata.org/ns/dataclass#govt"/>
+		  <format>text/html</format>
+		</rdf:Description>
+
+		<rdf:Description rdf:about="http://www.daml.org/2002/08/ncaa/"  rd:id="i115">
+		  <title>NCAA College American Football Schedules</title>
+		  <date>2005-01-11T14:30:00Z</date>
+           <description rdf:parseType="Literal">Data is from 2002, but page provides links to current NCAA CSV files and Java program to process them into up-to-date versions. football-2002.daml provides the schedules, referencing schools using URLs ending with a number, and institutions.daml assigns name labels to the numbers.</description>
+		  <type rdf:resource="http://www.rdfdata.org/ns/dataclass#sched"/>
+		  <format>text/html</format>
+		</rdf:Description>
+
+		<rdf:Description rdf:about="http://www.daml.org/2003/02/e164/e164.owl"  rd:id="i116">
+		    <title>Telephone Country Codes</title>
+		      <date>2005-01-12T15:00:00Z</date>
+           <description rdf:parseType="Literal">In OWL. Done as part of the DAML project. <a href='http://www.daml.org/2003/02/e164/'>(more)</a></description>
+	     <type rdf:resource="http://www.rdfdata.org/ns/dataclass#misc"/>
+		  <format>application/rdf+xml</format>
+		</rdf:Description>
+
+
+		<rdf:Description rdf:about="http://www.daml.org/2002/02/telephone/1/"  rd:id="i117">
+		    <title>U.S. Telephone Area Codes and Exchanges</title>
+		      <date>2005-01-13T14:45:00Z</date>
+           <description rdf:parseType="Literal">According to DAML Data Sources page <a href='https://www.daml.org/data/'>(here)</a> a "North American area codes and exchanges" listing, but I couldn't find any from Canada or Mexico. Area codes show the state of a phone number's origin and the exchange shows the city. OWL and DAML files.</description>
+	     <type rdf:resource="http://www.rdfdata.org/ns/dataclass#misc"/>
+	       <format>text/html</format>
+		</rdf:Description>
+
+		<rdf:Description rdf:about="http://www.daml.org/2003/01/periodictable/PeriodicTable.owl"  rd:id="i118">
+		    <title>Periodic table of the elements</title>
+		      <date>2005-01-14T15:45:00Z</date>
+           <description rdf:parseType="Literal">Name, symbol, atomic number and weight of each element, and more. OWL file created as part of the DAML project. (<a href="http://www.daml.org/2003/01/periodictable/">more</a>)</description>
+	     <format>application/rdf+xml</format>
+		</rdf:Description>
+
+
+		<rdf:Description rdf:about="http://www.kanzaki.com/works/2005/imgdsc/flickr2rdf"  rd:id="i119">
+		    <title>RDF of flickr metadata</title>
+		      <date>2005-01-17T14:45:00Z</date>
+           <description rdf:parseType="Literal">Web service provides RDF version of metadata about a picture on flickr.com. Dont' be fooled by the nice layout&#8212;do a View Source to see that it's RDF, but passed to your browser via an XSLT stylesheet. From The Web Kanzaki. <a href='http://www.kanzaki.com/works/2005/imgdsc/flickr2rdf?u=http%3A%2F%2Fwww.flickr.com%2Fphotos%2Fbobdc%2F413561%2Fin%2Fset-9807%2F'>(example)</a></description>
+	     <type rdf:resource="http://www.rdfdata.org/ns/dataclass#img"/>
+	       <type rdf:resource="http://www.rdfdata.org/ns/dataclass#websvc"/>
+	         <format>text/html</format>
+		</rdf:Description>
+
+		<rdf:Description rdf:about="http://www.isi.edu/~pan/timezonehomepage.html"  rd:id="i120">
+		    <title>Time Zone information by city</title>
+		      <date>2005-01-18T15:30:00Z</date>
+           <description rdf:parseType="Literal">Cities around the world, their time zone, and daylight savings status.</description>
+	     <type rdf:resource="http://www.rdfdata.org/ns/dataclass#sched"/>
+	       <format>text/html</format>
+		</rdf:Description>
+
+		<rdf:Description rdf:about="http://cvs.sourceforge.net/viewcvs.py/instancestore/instancestore/ontologies/Attic/wines.daml?rev=1.2"  rd:id="i121">
+		    <title>Wine/Food Ontology</title>
+		      <date>2005-01-19T15:35:00Z</date>
+           <description rdf:parseType="Literal">I'd like a glass of http://ontolingua.stanford.edu/doc/chimaera/ontologies/wines.daml#SEMILLON-OR-SAUVIGNON-BLANC with my http://ontolingua.stanford.edu/doc/chimaera/ontologies/wines.daml#SHELLFISH, please.</description>
+	     <type rdf:resource="http://www.rdfdata.org/ns/dataclass#misc"/>
+	       <format>application/rdf+xml</format>
+		</rdf:Description>
+
+		<rdf:Description rdf:about="http://www.daml.ecs.soton.ac.uk/ont/currency.daml"  rd:id="i123">
+		    <title>World currencies</title>
+		      <date>2005-01-20T15:40:00Z</date>
+           <description rdf:parseType="Literal">Currency name, ISO code, and link to ISO code for country name.</description>
+	     <type rdf:resource="http://www.rdfdata.org/ns/dataclass#misc"/>
+	       <format>application/rdf+xml</format>
+		</rdf:Description>
+
+
+		<rdf:Description rdf:about="http://reliant.teknowledge.com/DAML/TerroristActs.owl"  rd:id="i122">
+		    <title>Terrorist acts</title>
+		      <date>2005-01-21T15:30:00Z</date>
+           <description rdf:parseType="Literal">OWL file with details about over 1300 terrorist acts since 1988.</description>
+	     <type rdf:resource="http://www.rdfdata.org/ns/dataclass#misc"/>
+	       <format>application/rdf+xml</format>
+		</rdf:Description>
+
+
+		<rdf:Description rdf:about="http://www.daml.org/2003/05/subway/"  rd:id="i24">
+		    <title>Subway line information for three cities</title>
+		      <date>2005-01-24T15:50:00Z</date>
+           <description rdf:parseType="Literal">OWL lists of stops on Washington DC Metro, Boston MBTA, and San Francisco BART.</description>
+	     <type rdf:resource="http://www.rdfdata.org/ns/dataclass#misc"/>
+	       <format>text/html</format>
+		</rdf:Description>
+
+		<rdf:Description rdf:about="http://loki.cae.drexel.edu/~how/HydrologicUnits/2003/09/hu"  rd:id="i125">
+		    <title>A watershed listing</title>
+		      <date>2005-01-25T14:40:00Z</date>
+           <description rdf:parseType="Literal">Hydrologic units: US Geological Survey data on watersheds in U.S. "A watershed is composed of different water bodies, such as aquifers, ponds, lakes, reservoirs, rivers, streams and wetlands, each of which is associated with a HUC number."</description>
+	     <type rdf:resource="http://www.rdfdata.org/ns/dataclass#geo"/>
+	       <format>application/rdf+xml</format>
+		</rdf:Description>
+
+
+		<rdf:Description rdf:about="http://www.ai.sri.com/daml/notes/HW3/bib1300.daml"  rd:id="i126">
+		    <title>DAML annotation of bibliography entries for journal articles</title>
+		      <date>2005-01-26T14:30:00Z</date>
+           <description rdf:parseType="Literal">About 1300 entries from the SRI's AI center. <a href="http://www.ai.sri.com/daml/notes/HW3/">(more)</a></description>
+	     <type rdf:resource="http://www.rdfdata.org/ns/dataclass#biblio"/>
+	       <format>application/rdf+xml</format>
+		</rdf:Description>
+
+
+		<rdf:Description rdf:about="http://www.daml.org/tools/tools.daml"  rd:id="i127">
+		    <title>DAML Tools</title>
+		      <date>2005-01-27T15:20:00Z</date>
+           <description rdf:parseType="Literal">"Tools used by various participants in the DAML program." <a href='http://www.daml.org/tools/'>(more)</a></description>
+	     <type rdf:resource="http://www.rdfdata.org/ns/dataclass#sware"/>
+        <format>application/rdf+xml</format>
+		</rdf:Description>
+
+		<rdf:Description rdf:about="http://www.daml.ri.cmu.edu/ont/AirportCodes.daml"  rd:id="i128">
+		    <title>Airport codes</title>
+		      <date>2005-01-28T15:20:00Z</date>
+           <description rdf:parseType="Literal">IATA three-letter code, full name, city, and country for 1,902 airports.</description>
+	     <type rdf:resource="http://www.rdfdata.org/ns/dataclass#geo"/>
+        <format>application/rdf+xml</format>
+		</rdf:Description>
+
+		<rdf:Description rdf:about="http://www.daml.ri.cmu.edu/ont/homework/cmu-ri-project.daml"  rd:id="i128">
+		    <title>CMU Projects</title>
+		      <date>2005-01-31T14:45:00Z</date>
+           <description rdf:parseType="Literal">Information about 363 projects at Carnegie Mellon University such as "Motion Planning for Serpentine Robots" and "Automated Face Analysis". Done as part of a 2001 CMU homework assignment <a href='https://www.daml.org/homework/3/assignment.html'>(more)</a></description>
+	     <type rdf:resource="http://www.rdfdata.org/ns/dataclass#misc"/>
+        <format>application/rdf+xml</format>
+		</rdf:Description>
+
+		<rdf:Description rdf:about="http://www.isi.edu/webscripter/mrftodoaddenda.d.daml"  rd:id="i129">
+		    <title>Structured to-do list with metadata</title>
+		      <date>2005-02-01T15:10:00Z</date>
+           <description rdf:parseType="Literal">To-do list serving as example data from Webscripter project at USC's Information Sciences Institute. "WebScripter is a tool that enables ordinary users to easily and quickly assemble reports extracting and fusing information from multiple, heterogeneous DAMLized Web sources." <a href='http://www.isi.edu/webscripter/'>(more)</a></description>
+	     <type rdf:resource="http://www.rdfdata.org/ns/dataclass#pim"/>
+        <format>application/rdf+xml</format>
+		</rdf:Description>
+
+		<rdf:Description rdf:about="http://simile.mit.edu/repository/datasets/hp-tr/data/"  rd:id="i130">
+		    <title>Hewlett Packard's Research Labs Technical Reports</title>
+		      <date>2005-02-02T14:30:00Z</date>
+           <description rdf:parseType="Literal">Created as part of MIT's SIMILE project.</description>
+	     <type rdf:resource="http://www.rdfdata.org/ns/dataclass#biblio"/>
+        <format>text/html</format>
+		</rdf:Description>
+
+		<rdf:Description rdf:about="http://simile.mit.edu/repository/datasets/w3c-glossary/data/"  rd:id="i131">
+		    <title>W3C Glossary and Dictionary entries</title>
+		      <date>2005-02-04T17:00:00Z</date>
+           <description rdf:parseType="Literal">RDF versions of definitions from W3C Technical Reports. Developed as part of MIT's Simile project. <a href='http://www.w3.org/QA/2003/01/Glossary'>(more)</a></description>
+	     <type rdf:resource="http://www.rdfdata.org/ns/dataclass#ref"/>
+        <format>text/html</format>
+		</rdf:Description>
+
+      <rdf:Description rdf:about="http://www.ksl.stanford.edu/projects/DAML/UNSPSC.daml" rd:id="i132">
+        <title>DAML version of Universal Standard Products and Services Classification Code</title>
+        <date>2005-02-07T16:30:00Z</date>
+        <description rdf:parseType="Literal">A list of product codes and ontology information from the merger of two United Nations and Dun and Bradstreet projects: "the first coding system to classify both 
+products and services for use throughout the global marketplace." For example, while Space-based-war (unspsc-code 92112404) is a subClass of Armed-conflicts-and-incidents, Sturgeon (unspsc-code 50121515) is a subClass of Fresh-or-frozen-fish-and-fish-byproducts. Seriously.</description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#ref"/>
+        <format>application/rdf+xml</format>
+      </rdf:Description>
+
+     <rdf:Description rdf:about="http://www.isi.edu/webscripter/planning.scheduling.daml" rd:id="i133">
+        <title>AI bibliography</title>
+        <date>2005-02-08T14:50:00Z</date>
+        <description rdf:parseType="Literal">Over three thousand titles. Created as part of the Webscripter project. (Bad rdf:ID values, though; they have spaces in them.) </description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#biblio"/>
+        <format>application/rdf+xml</format>
+     </rdf:Description>
+
+      <rdf:Description rdf:about="http://inanna.ecs.soton.ac.uk/~swh/Projects/AKT/RDF2SQL/hero" rd:id="i134">
+        <title>AKT project bibliographies</title>
+        <date>2005-02-09T15:20:00Z</date>
+        <description rdf:parseType="Literal">69 files available in both RDF/XML and n3 (plus some half-gigabyte aggregations) of bibliographies on a wide range of subjects. Part of the Advanced Knowledge Technologies project. <a href='http://www.aktors.org/akt/'>(more)</a></description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#biblio"/>
+        <format>text/html</format>
+      </rdf:Description>
+
+      <rdf:Description rdf:about="http://triplestore.aktors.org/data/Bristol/BristolConference.rdf" rd:id="i135">
+        <title>University of Bristol Dept. of Computer Science research papers</title>
+        <date>2005-02-10T15:00:00Z</date>
+        <description rdf:parseType="Literal">Metadata about papers from 1988 - 2002 and their authors. <a href='http://www.cs.bris.ac.uk/Publications/index.jsp'>(more)</a></description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#biblio"/>
+        <format>application/rdf+xml</format>
+      </rdf:Description>
+
+
+
+
+      <rdf:Description rdf:about="http://triplestore.aktors.org/manage/" rd:id="i136">
+        <title>Advanced Knowledge Technologies Triplestore</title>
+        <date>2005-02-11T15:20:00Z</date>
+        <description rdf:parseType="Literal">"The AKT Triplestore is an RDF store containing information about the UK HE computer science community." Thousands of files, with lots of bibliographies and information about projects and people. <a href='http://triplestore.aktors.org/'>(more)</a></description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#misc"/>
+        <format>text/html</format>
+      </rdf:Description>
+
+      <rdf:Description rdf:about="http://www.semanticweb.gr/sw_community/sw_community.owl" rd:id="i137">
+        <title>Metadata on the semantic web community</title>
+        <date>2005-02-14T16:00:00Z</date>
+        <description rdf:parseType="Literal">Tools, projects, people. Hosted by semanticweb.gr.</description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#semweb"/>
+        <format>application/rdf+xml</format>
+      </rdf:Description>
+
+      <rdf:Description rdf:about="http://bitsko.slc.ut.us/chatlogs/echo/" rd:id="i138">
+        <title>Ken MacLeod's IRC chat logs</title>
+        <date>2005-02-15T15:00:00Z</date>
+        <description rdf:parseType="Literal">Over 50 files generated with Dave Beckett's logger.pl bot.</description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#chatlog"/>
+        <format>text/html</format>
+      </rdf:Description>
+
+      <rdf:Description rdf:about="http://www.daml.ri.cmu.edu/ont/CanadianState.daml" rd:id="i139">
+        <title>Canadian states and territories</title>
+        <date>2005-02-16T14:45:00Z</date>
+        <description rdf:parseType="Literal">Including capitals, postal codes, and border states.</description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#geo"/>
+        <format>application/rdf+xml</format>
+      </rdf:Description>
+
+      <rdf:Description rdf:about="http://www.semanticblogging.org/blojsom-hp/blog/" rd:id="i140">
+        <title>Semantic Blogging Demonstrator</title>
+        <date>2005-02-17T14:45:00Z</date>
+        <description rdf:parseType="Literal">Clicking "XML format" or "N3 format" on any entry leads to an RDF version that's escaped and wrapped in HTML; remove "&amp;readable" from the end of the URL to see the real RDF version. </description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#semweb"/>
+        <format>text/html</format>
+      </rdf:Description>
+
+      <rdf:Description rdf:about="http://www.openrdf.org/issues/secure/attachment/10020/BugsInLNRTest.rdf" rd:id="i141">
+        <title>Semantic Web Projects</title>
+        <date>2005-02-18T15:15:00Z</date>
+        <description rdf:parseType="Literal">Information about semantic web projects extracted from a Sesame database. <a href='http://www.openrdf.org/issues/secure/ViewIssue.jspa?key=SES-50'>(more)</a></description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#semweb"/>
+        <format>application/rdf+xml</format>
+      </rdf:Description>
+
+
+      <rdf:Description rdf:about="http://triplestore.aktors.org/data/RAE/" rd:id="i142">
+        <title>RAE research funds metadata</title>
+        <date>2005-02-21T14:45:00Z</date>
+        <description rdf:parseType="Literal">Research Assessment Exercise (RAE) information on UK public research funds, including researcher names, fields of research, submitted publications, and other information. <a href='http://www.hero.ac.uk/rae/AboutUs/'>(more)</a></description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#misc"/>
+        <format>text/html</format>
+      </rdf:Description>
+ 
+      <rdf:Description rdf:about="http://www.google.com/search?q=site:norman.walsh.name%20filetype:rdf" rd:id="i143">
+        <title>Metadata about norman.walsh.name web pages</title>
+        <date>2005-02-22T14:35:00Z</date>
+        <description rdf:parseType="Literal">One for each of the hundreds of web pages on the site, I believe.</description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#webmeta"/>
+        <format>text/html</format>
+      </rdf:Description>
+
+
+      <rdf:Description rdf:about="http://www.aiai.ed.ac.uk/~jessicac/project/akt/akt-map-owl.xml" rd:id="i144">
+        <title>AKT Research Map</title>
+        <date>2005-02-23T14:30:00Z</date>
+        <description rdf:parseType="Literal">"The AKT Research Map describes research activities that have been carried out within the AKT project and the progress and relevant information about these activities." </description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#semweb"/>
+        <format>application/rdf+xml</format>
+      </rdf:Description>
+
+      <rdf:Description rdf:about="http://www.mnot.net/drafts/draft-nottingham-hdrreg-http/http_headers.n3" rd:id="i145">
+        <title>HTTP header registry</title>
+        <date>2005-02-24T15:55:00Z</date>
+        <description rdf:parseType="Literal">Created by Mark Nottingham. In n3.</description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#webmeta"/>
+        <format>application/rdf+xml</format>
+      </rdf:Description>
+ 
+
+      <rdf:Description rdf:about="http://www.wasab.dk/morten/photos/all.rdf" rd:id="i146">
+        <title>Metadata for Morten Frederiksen's photos</title>
+        <date>2005-02-25T15:10:00Z</date>
+        <description rdf:parseType="Literal">all.rdf file is a starting point for scuttering.</description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#img"/>
+        <format>application/rdf+xml</format>
+      </rdf:Description>
+
+      <rdf:Description rdf:about="http://www.picdiary.com/rss/" rd:id="i147">
+        <title>picdiary.com picture metadata</title>
+        <date>2005-02-28T14:50:00Z</date>
+        <description rdf:parseType="Literal">Pictures by Matt Biddulph, metadata in RSS 1.0.</description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#img"/>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#rss"/>
+        <format>text/html</format>
+      </rdf:Description>
+ 
+      <rdf:Description rdf:about="http://www.google.com/search?q=site:kwark.org%20inurl:jpg.html" rd:id="i149">
+        <title>Metadata for Jip de Kort's photos</title>
+        <date>2005-03-01T14:40:00Z</date>
+        <description rdf:parseType="Literal">Add
+?tmpl=image-foaf to the URL for an image, such as http://www.kwark.org/Gfx/2005/2005Week08/dscn9091.Kariboestraat.jpg.html, to see RDF of the metadata for the image. <a href='http://www.kwark.org/Gfx/2005/2005Week08/dscn9091.Kariboestraat.jpg.html?tmpl=image-foaf'>(example)</a></description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#img"/>
+        <format>text/html</format>
+      </rdf:Description>
+
+      <rdf:Description rdf:about="http://www.google.com/search?q=site:hjsoft.com+filetype:rdf&amp;filter=0&amp;inurl:blog" rd:id="i150">
+        <title>Weblog archives at Happy John Software</title>
+        <date>2005-03-02T14:28:00Z</date>
+        <description rdf:parseType="Literal">A series of RSS 1.0 files.</description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#rss"/>
+        <format>text/html</format>
+      </rdf:Description>
+
+
+      <rdf:Description rdf:about="http://www.google.com/search?q=site%3Akanzaki.com+filetype%3Ardf+inurl%3Aimgdsc" rd:id="i151">
+        <title>Web Kanzaki image metadata</title>
+        <date>2005-03-03T15:30:00Z</date>
+        <description rdf:parseType="Literal">RDF files point to XSLT stylesheets for display in Mozilla and Internet Explorer, often with clickable image maps implemented.</description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#img"/>
+        <format>text/html</format>
+      </rdf:Description>
+
+      <rdf:Description rdf:about="http://www.google.com/search?q=site%3Akanzaki.com+filetype%3Ardf+inurl%3Acal" rd:id="i152">
+        <title>Web Kanzaki calendar files</title>
+        <date>2005-03-04T15:50:00Z</date>
+        <description rdf:parseType="Literal">New York comedy appearances, classical music tours, museum events. In English and Japanese, and files point to an XSLT stylesheet that formats data in a calendar grid.</description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#sched"/>
+        <format>text/html</format>
+      </rdf:Description>
+ 
+      <rdf:Description rdf:about="http://www.organigramme.net/ppsf/rdf/" rd:id="i154">
+        <title>Endless Photographic Project metadata</title>
+        <date>2005-03-07T15:15:00Z</date>
+        <description rdf:parseType="Literal">Not many pictures, considering the project's name, but a nice idea. Data en fran&#231;ais. <a href='http://www.organigramme.net/ppsf/'>(more)</a></description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#img"/>
+        <format>text/html</format>
+      </rdf:Description>
+
+      <rdf:Description rdf:about="http://www.csd.abdn.ac.uk/research/AgentCities/ontologies/films.rdf" rd:id="i155">
+        <title>Movie theater schedules from 2002</title>
+        <date>2005-03-08T15:40:00Z</date>
+        <description rdf:parseType="Literal">Part of a University of Aberdeen AgentCities project. <a href='http://www.csd.abdn.ac.uk/research/AgentCities/'>(more)</a></description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#sched"/>
+        <format>application/rdf+xml</format>
+      </rdf:Description>
+ 
+
+      <rdf:Description rdf:about="http://www.atl.external.lmco.com/projects/ontology/ontologies/russia/russiaA.rdf" rd:id="i156">
+        <title>Information about Russia</title>
+        <date>2005-03-09T15:25:00Z</date>
+        <description rdf:parseType="Literal">From Lockheed Martin's Advanced Tecnology Laboratories. Same directory includes a russiaA.n3 file.</description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#geo"/>
+        <format>application/rdf+xml</format>
+      </rdf:Description>
+
+      <rdf:Description rdf:about="http://www.the325project.org/factlog/events.rdf" rd:id="i157">
+        <title>325 Project listing of events</title>
+        <date>2005-03-10T17:40:00Z</date>
+        <description rdf:parseType="Literal">'The goal of the "325 Project" is to comprehensively document the year 325 when the west became Christian.'  Not a huge file yet yet, but it looks like it (and people.rdf in the same directory) will be growing. <a href='http://www.the325project.org/'>(more)</a></description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#misc"/>
+        <format>application/rdf+xml</format>
+      </rdf:Description>
+ 
+
+      <rdf:Description rdf:about="http://www.google.com/search?q=site:impressive.net%20filetype:rdf " rd:id="i158">
+        <title>Gerald Oskoboiny's picture metadata</title>
+        <date>2005-03-14T15:00:00Z</date>
+        <description rdf:parseType="Literal">Google counts over 4,000. Replace the .rdf extension with .jpg to see the picture or with .html to see a page showing the picture, HTML of the metadata, and a link to the RDF.</description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#img"/>
+        <format>text/html</format>
+      </rdf:Description>
+ 
+      <rdf:Description rdf:about="http://www.ninebynine.org/Software/HaskellRDF/RDF/Harp/test/" rd:id="i159">
+        <title>RDF parser test data</title>
+        <date>2005-03-15T15:45:00Z</date>
+        <description rdf:parseType="Literal">Developed by Graham Klyne for HARP (his "Haskell RDF Parser").</description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#misc"/>
+        <format>text/html</format>
+      </rdf:Description>
+
+      <rdf:Description rdf:about="http://www.aaronsw.com/photos/metadata.n3" rd:id="i160">
+        <title>Aaron Swartz's picture metadata</title>
+        <date>2005-03-16T18:45:00Z</date>
+        <description rdf:parseType="Literal">In n3.</description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#img"/>
+        <format>text/html</format>
+      </rdf:Description>
+ 
+      <rdf:Description rdf:about="http://140.203.12.136/rdf/" rd:id="i161">
+        <title>New books in the National University of Ireland, Galway</title>
+        <date>2005-03-17T14:30:00Z</date>
+        <description rdf:parseType="Literal">Individual files for various categories of books and one all-new-books.rdf master file. <a href='http://www.nuigalway.ie/'>(library home page)</a></description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#biblio"/>
+        <format>text/html</format>
+      </rdf:Description>
+
+      <rdf:Description rdf:about="http://lists.w3.org/Archives/Public/www-archive/2001Nov/att-0033" rd:id="i162">
+        <title>Guitar chord fingerings</title>
+        <date>2005-03-18T10:48:00Z</date>
+        <description rdf:parseType="Literal">In RDF/XML and n3, covering some pretty complex chords. Surprisingly readable.</description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#music"/>
+        <format>text/html</format>
+      </rdf:Description>
+
+
+        
+      <rdf:Description rdf:about="http://www.ninebynine.org/iTrust/iTrust-survey.n3" rd:id="i163">
+        <title>iTrust conference paper survey</title>
+        <date>2005-03-21T15:15:00Z</date>
+        <description rdf:parseType="Literal">From their 2003 and 2004 conferences. In n3. <a href='http://www.itrust.uoc.gr/'>(more on iTrust)</a></description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#biblio"/>
+        <format>text/html</format>
+      </rdf:Description>
+ 
+        
+      <rdf:Description rdf:about="http://eulersharp.sourceforge.net/2004/04test/" rd:id="i164">
+        <title>Test files for Euler proof mechanism</title>
+        <date>2005-03-22T15:15:00Z</date>
+        <description rdf:parseType="Literal">Euler is an inference engine hosted at sourceforge, and includes a large number of test files in n3. <a href="http://eulersharp.sourceforge.net/">(more)</a></description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#semweb"/>
+        <format>text/html</format>
+      </rdf:Description>
+ 
+      <rdf:Description rdf:about="http://www.w3.org/2000/04/mem-news/public-groups.rdf" rd:id="i165">
+        <title>W3C groups and activities</title>
+        <date>2005-03-23T14:40:00Z</date>
+        <description rdf:parseType="Literal">Actiivities, home pages, time frames, and mailing lists. Lots of good links showing relationships.</description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#w3c"/>
+        <format>application/rdf+xml</format>
+      </rdf:Description>
+
+      <rdf:Description rdf:about="http://www.w3.org/2004/08/TalkFiles/2005/Talks.rdf" rd:id="i166">
+        <title>W3C talks</title>
+        <date>2005-03-24T14:25:00Z</date>
+        <description rdf:parseType="Literal">Talks given on W3C-related topics. Metadata often in the same language as the talk itself, and  a variety of languages are represented (English, Japanese, Finnish, Spanish...)</description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#w3c"/>
+        <format>application/rdf+xml</format>
+      </rdf:Description>
+
+      <rdf:Description rdf:about="http://www.w3.org/2005/03dc-msp/agenda_62.rdf" rd:id="i167">
+        <title>Agenda of the 62nd IETF meeting in March 2005</title>
+        <date>2005-03-25T14:45:00Z</date>
+        <description rdf:parseType="Literal">With meeting times and locations. <a href='http://www.w3.org/2005/03dc-msp/agenda_62.html'>(more)</a></description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#sched"/>
+        <format>application/rdf+xml</format>
+      </rdf:Description>
+
+      <rdf:Description rdf:about="http://kasei.us/feeds/images.xrdf" rd:id="i168">
+        <title>Gregory Williams' image metadata</title>
+        <date>2005-03-28T15:10:00Z</date>
+        <description rdf:parseType="Literal">About 8 megs. <a href='http://kasei.us/feeds/images.xrdf.bz2'>(300K bzipped version)</a></description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#img"/>
+        <format>application/rdf+xml</format>
+      </rdf:Description>
+
+      <rdf:Description rdf:about="http://www.w3.org/2005/03/css-dep/css3deps.rdf" rd:id="i169">
+        <title>Dependencies among W3C CSS technical reports</title>
+        <date>2005-03-29T16:10:00Z</date>
+        <description rdf:parseType="Literal">Too bad the dependencies were identified using the http://www.example.org/dep# "namespace", though.</description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#w3c"/>
+        <format>application/rdf+xml</format>
+      </rdf:Description>
+ 
+        
+      <rdf:Description rdf:about="http://rdfstore.sourceforge.net/2002/06/24/rdf-query/query-use-cases.rdf" rd:id="i170">
+        <title>RDFStore query use cases</title>
+        <date>2005-03-30T15:15:00Z</date>
+        <description rdf:parseType="Literal">Query use cases for sourceforge project RDFStore in one big file. Also available in separate files. <a href='http://rdfstore.sourceforge.net/2002/06/24/rdf-query/incoming/'>(directory of files)</a></description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#semweb"/>
+        <format>application/rdf+xml</format>
+      </rdf:Description>
+
+      <rdf:Description rdf:about="http://introspector.sourceforge.net/2004/12/BUG_8262_total.rdf" rd:id="i171">
+        <title>Bug report from sourceforge project Introspector</title>
+        <date>2005-03-31T15:40:00Z</date>
+        <description rdf:parseType="Literal">"The Introspector enables the programming tools that deal with source code such as the compiler to communicate in a standard and neutral manner reducing the accidental cost of programming... The usage of RDF or Resources Description Format as the underlying representation is of essential importance." <a href='http://introspector.sourceforge.net/'>(project home page)</a></description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#sware"/>
+        <format>application/rdf+xml</format>
+      </rdf:Description>
+ 
+
+     <rdf:Description rdf:about="http://www.historical-id.info/files/" rd:id="i172">
+        <title>kings, pharoahs, presidents...</title>
+        <date>2005-03-31T22:40:00Z</date>
+        <description rdf:parseType="Literal">"The purpose of historical-id.info is to provide unique URIs for historical figures, and to publish some simple RDF containing identifying information."</description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#ref"/>
+        <format>text/html</format>
+     </rdf:Description>
+
+
+      <rdf:Description rdf:about="http://www.snee.com/rdf/elvisimp.rdf" rd:id="i173">
+        <title>Metadata about Elvis impersonators</title>
+        <date>2005-04-01T14:30:00Z</date>
+        <description rdf:parseType="Literal">At last, the semantic web is complete. Extensive metadata about 81 Elvis impersonators, some with scary videoclips. (slurred southern accent:) "Thank you, thank you very much."</description>
+        <type rdf:resource="http://www.rdfdata.org/ns/dataclass#music"/>
+        <format>application/rdf+xml</format>
+      </rdf:Description>
+ 
+
+  <!-- next id: i174 -->
+  <!--
+      <rdf:Description rdf:about="" rd:id="i**">
+      <title>***</title>
+      <date>2005-xx-xxT15:00:00Z</date>
+      <description rdf:parseType="Literal"></description>
+      <type rdf:resource="http://www.rdfdata.org/ns/dataclass#XXX"/>
+
+DELETE THIS LINE AND ONE OF THE FOLLOWING TWO
+<format>text/html</format>
+<format>application/rdf+xml</format>
+
+</rdf:Description>
+  -->
+</rdf:RDF>
